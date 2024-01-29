@@ -1,103 +1,41 @@
-/* Google Fonts Import */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
-
-/* Resetting margins and paddings */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #0c0c0c;
-  background-color: #ffffff;
-  overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    color: #fff;
 }
 
-/* Header Styles */
-.header_section {
-  background-color: #007bff; /* Example color */
-  color: white;
-  padding: 15px 0;
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
 }
 
-.navbar-brand span {
-  font-weight: bold;
-  color: #ffffff;
+header h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
-/* Hero Section Styles */
-.hero_area {
-  background-image: url('images/hero-bg.png'); /* Example background image */
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
+header p {
+    font-size: 1.2em;
 }
 
-/* Service Section Styles */
-.service_section {
-  padding: 90px 0;
-  background-color: #f8f8f9;
+.main-content {
+    padding: 20px;
 }
 
-/* About Section Styles */
-.about_section {
-  padding: 90px 0;
-  background-color: #00204a;
-  color: #ffffff;
+footer {
+    background-color: #1e1e1e;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-/* Why Section Styles */
-.why_section {
-  padding: 90px 0;
-  background-color: #f0f0f0;
+footer p {
+    margin: 0;
 }
 
-/* Team Section Styles */
-.team_section {
-  padding: 90px 0;
-  background-color: #00204a;
-  color: #ffffff;
-}
-
-/* Client Section Styles */
-.client_section {
-  padding: 90px 0;
-  background-color: #ffffff;
-}
-
-/* Info Section Styles */
-.info_section {
-  padding: 75px 0;
-  background-color: #00204a;
-  color: #ffffff;
-}
-
-/* Footer Section Styles */
-.footer_section {
-  background-color: #ffffff;
-  color: #00204a;
-  text-align: center;
-  padding: 25px 0;
-}
-
-/* Utility Classes */
-.btn {
-  background-color: #00bbf0; /* Example button color */
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-transform: uppercase;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #007fa4;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  /* Adjust styles for smaller screens */
-}
+/* Add more styles for your main content, buttons, etc. */
