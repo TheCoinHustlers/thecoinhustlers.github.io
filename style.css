@@ -1,78 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #0c0c0c;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.header_section {
+    padding: 15px 0;
+}
+
+.header_section .container-fluid {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.navbar-brand span {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.custom_nav-container {
     padding: 0;
-    background: linear-gradient(to right, #333, #222);
-    color: #fff;
 }
 
-header {
-    background: linear-gradient(to right, #1e1e1e, #111);
-    padding: 20px;
+.custom_nav-container .navbar-nav {
+    margin-left: auto;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+    padding: 5px 20px;
+    color: #ffffff;
     text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.3s;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 3em;
-    color: #61dafb; /* Blue color for emphasis */
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+    color: #00bbf0;
 }
 
-header p {
-    font-size: 1.2em;
+.custom_nav-container .navbar-nav .nav-item.active .nav-link {
+    font-weight: 600;
 }
 
-nav {
-    background: #333;
-    padding: 10px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
+.custom_nav-container .nav_search-btn {
+    width: 35px;
+    height: 35px;
     padding: 0;
-    text-align: center;
-}
-
-li {
-    display: inline;
-    margin-right: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2em;
-}
-
-.main-content {
-    padding: 40px;
-    text-align: center;
-}
-
-.main-button {
-    background-color: #61dafb;
-    color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    color: #ffffff;
 }
 
-.main-button:hover {
-    background-color: #4fa3d1;
+.custom_nav-container .nav_search-btn:hover {
+    color: #00bbf0;
 }
 
-footer {
-    background: linear-gradient(to right, #1e1e1e, #111);
-    padding: 10px;
-    text-align: center;
-    position: fixed;
+.custom_nav-container .navbar-toggler {
+    outline: none;
+}
+
+.custom_nav-container .navbar-toggler {
+    padding: 0;
+    width: 37px;
+    height: 42px;
+    transition: all 0.3s;
+}
+
+.custom_nav-container .navbar-toggler span {
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 7px 0;
+    transition: all 0.3s;
+    position: relative;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.custom_nav-container .navbar-toggler span::before, .custom_nav-container .navbar-toggler span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
     width: 100%;
-    bottom: 0;
+    background-color: #ffffff;
+    top: -10px;
+    border-radius: 5px;
+    transition: all 0.3s;
 }
 
-footer p {
+.custom_nav-container .navbar-toggler span::after {
+    top: 10px;
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] {
+    transform: rotate(360deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span {
+    transform: rotate(45deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::before, .custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+/* Add more styles for other sections as needed */
+/* ... */
+
+.footer_section {
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 45px 0 15px 0;
+}
+
+.footer_section p {
+    color: #00204a;
     margin: 0;
+}
+
+.footer_section p a {
+    color: inherit;
 }
