@@ -1,0 +1,267 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Section */
+.header_section {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.custom_nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Crypto Currency Section */
+.crypto_currency_section {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.crypto_currency_section h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.crypto_currency_section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.crypto_currency_section a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.crypto_currency_section a:hover {
+    background-color: #555;
+}
+
+/* Our Services Section */
+.our_services_section {
+    padding: 80px 0;
+}
+
+.our_services_section h2 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.service p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.service a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.service a:hover {
+    background-color: #555;
+}
+
+.view_all_link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view_all_link:hover {
+    background-color: #555;
+}
+
+/* About Us Section */
+.about_us_section {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about_us_section h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.about_us_section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about_us_section a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about_us_section a:hover {
+    background-color: #555;
+}
+
+/* Why Choose Us Section */
+.why_choose_us_section {
+    padding: 80px 0;
+}
+
+.why_choose_us_section h2 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.reason {
+    margin-bottom: 40px;
+}
+
+.reason h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.reason p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Our Team Section */
+.our_team_section {
+    background-color: #333;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.our_team_section h2 {
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.team_member {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team_member img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team_member h3 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.team_member p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* Contact Section */
+.contact_section {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact_section h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.contact_section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+.footer_section {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer_section p {
+    font-size: 14px;
+}
