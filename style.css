@@ -1,32 +1,71 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #101010;
+    background: linear-gradient(to right, #333, #222);
     color: #fff;
 }
 
 header {
-    background-color: #1e1e1e;
+    background: linear-gradient(to right, #1e1e1e, #111);
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 3em;
+    color: #61dafb; /* Blue color for emphasis */
 }
 
 header p {
     font-size: 1.2em;
 }
 
+nav {
+    background: #333;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
 .main-content {
-    padding: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.main-button {
+    background-color: #61dafb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.main-button:hover {
+    background-color: #4fa3d1;
 }
 
 footer {
-    background-color: #1e1e1e;
+    background: linear-gradient(to right, #1e1e1e, #111);
     padding: 10px;
     text-align: center;
     position: fixed;
@@ -37,5 +76,3 @@ footer {
 footer p {
     margin: 0;
 }
-
-/* Add more styles for your main content, buttons, etc. */
