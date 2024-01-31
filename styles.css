@@ -12,8 +12,8 @@
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 14px;
-    background-color: #000;
-    color: #fff;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     line-height: 1.6;
 }
 
@@ -22,8 +22,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     padding: 20px;
     text-align: center;
     display: flex;
@@ -31,14 +31,15 @@ header {
 }
 
 .header-image {
-    width: 140px; /* Adjusted size */
-    height: 160px;
+    width: 180px;
+    height: 200px;
     border-radius: 50%;
     margin-right: 20px;
 }
 
 h1 {
     font-family: 'KA1', Arial, sans-serif;
+    color: #ff0000; /* Red text for title */
 }
 
 #main-content {
@@ -47,28 +48,22 @@ h1 {
     padding: 20px;
 }
 
-#blog-feed {
-    width: 70%;
-    background-color: #222;
-    padding: 15px;
-}
-
-#sidebar {
-    width: 28%;
-    background-color: #111;
+#blog-feed, #sidebar {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     padding: 15px;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     text-align: center;
     padding: 10px;
     margin-top: 10px;
 }
 
 a {
-    color: #ff0000;
+    color: #ff0000; /* Red text for links */
     text-decoration: none;
 }
 
