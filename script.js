@@ -1,21 +1,18 @@
-const apiKey = '9bfb8ab2-7a68-4724-8dc5-1ed2d83a25a7';
-const apiUrl = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest';
+// Use CORS Anywhere as a prefix
+const corsProxyUrl = 'https://cors-anywhere.herokuapp.com/';
+const apiUrl = `${corsProxyUrl}https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?CMC_PRO_API_KEY=9bfb8ab2-7a68-4724-8dc5-1ed2d83a25a7&start=1&limit=10&convert=USD`;
 
-document.addEventListener('DOMContentLoaded', () => {
-    fetch(`${apiUrl}?CMC_PRO_API_KEY=${apiKey}&start=1&limit=10&convert=USD`)
-        .then(response => response.json())
-        .then(data => {
-            const cryptoDataElement = document.getElementById('crypto-data');
-            const cryptoList = data.data;
+// Function to fetch data from the API
+async function fetchData() {
+    try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        console.log(data); // Log the data to the console (for testing)
+        // Handle the data as needed
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
 
-            const listItems = cryptoList.map(crypto => {
-                return `<li>${crypto.name}: $${crypto.quote.USD.price.toFixed(2)}</li>`;
-            });
-
-            cryptoDataElement.innerHTML = `<ul>${listItems.join('')}</ul>`;
-        })
-        .catch(error => {
-            console.error('Error fetching data:', error);
-            alert('Error fetching data. Please check the console for details.');
-        });
-});
+// Call the fetchData function
+fetchData();
