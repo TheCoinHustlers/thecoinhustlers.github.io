@@ -32,7 +32,7 @@ header {
 
 .header-image {
     width: 120px; /* Adjusted size */
-    height: 120px;
+    height: 160px;
     border-radius: 50%;
     margin-right: 20px;
 }
