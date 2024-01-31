@@ -27,6 +27,7 @@ header {
     padding: 20px;
     text-align: center;
     display: flex;
+    flex-direction: column; /* Adjusted for centered title and icons */
     align-items: center;
 }
 
@@ -34,12 +35,35 @@ header {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-bottom: 10px; /* Adjusted margin for spacing */
 }
 
 h1 {
     font-family: 'KA1', Arial, sans-serif;
     color: #fff; /* White text for title */
+}
+
+#title-and-icons {
+    text-align: center; /* Center the title and icons */
+}
+
+#social-links {
+    margin-top: 10px; /* Adjust the spacing between the title and icons */
+}
+
+#social-links a {
+    display: inline-block; /* Display icons in a row */
+    margin: 0 10px; /* Adjust spacing between icons */
+}
+
+#social-links img {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+    filter: invert(100%); /* Make the icons white */
+}
+
+#social-links img:hover {
+    filter: invert(70%); /* Adjust the hover effect as needed */
 }
 
 #main-content {
@@ -69,19 +93,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-#social-links {
-    text-align: center; /* Center the social links */
-}
-
-#social-links img {
-    width: 30px; /* Adjust the size as needed */
-    height: auto;
-    margin: 10px; /* Adjust the spacing around icons as needed */
-    filter: invert(100%); /* Make the icons white */
-}
-
-#social-links img:hover {
-    filter: invert(70%); /* Adjust the hover effect as needed */
 }
