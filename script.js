@@ -8,10 +8,8 @@ async function fetchData() {
         const response = await fetch(apiUrl);
         const { data } = await response.json();
 
-        // Log the names of cryptocurrencies
-        data.forEach(crypto => {
-            console.log('Cryptocurrency Name:', crypto.name);
-        });
+        // Log the entire data for inspection
+        console.log('Cryptocurrency Data:', data);
     } catch (error) {
         console.error('Error fetching data:', error);
     }
