@@ -25,26 +25,26 @@ header {
     background-color: #000; /* Black background */
     color: #fff; /* White text */
     padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column; /* Adjusted for centered title and icons */
-    align-items: center;
+    text-align: left; /* Align the content to the left */
 }
 
 .header-image {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin-bottom: 10px; /* Adjusted margin for spacing */
+    margin-right: 20px;
 }
 
 h1 {
     font-family: 'KA1', Arial, sans-serif;
     color: #fff; /* White text for title */
+    margin-bottom: 10px; /* Add some margin at the bottom of the title */
 }
 
 #title-and-icons {
-    text-align: center; /* Center the title and icons */
+    display: flex;
+    align-items: center; /* Align the content vertically in the container */
+    justify-content: space-between; /* Space between the title and icons */
 }
 
 #social-links {
