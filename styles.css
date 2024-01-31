@@ -9,11 +9,11 @@ body {
     font-size: 14px;
     background-color: #000;
     color: #fff;
+    line-height: 1.6;
 }
 
 #wrapper {
-    margin: 0 auto;
-    width: 922px;
+    max-width: 100%;
 }
 
 header {
@@ -23,61 +23,43 @@ header {
     text-align: center;
 }
 
-#faux {
-    overflow: auto;
-}
-
-#leftcolumn, #rightcolumn {
-    background-color: #222;
-    color: #ddd;
-    padding: 15px;
-    width: 195px;
-}
-
-#leftcolumn {
-    float: left;
-}
-
-#rightcolumn {
-    float: right;
-}
-
-#content {
-    float: left;
-    width: calc(100% - 410px);
-    padding: 20px;
+#profile {
+    display: flex;
+    align-items: center;
     background-color: #111;
+    padding: 20px;
 }
 
-#content h2 {
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#profile-info h2 {
     color: #ff0000;
+    margin-bottom: 10px;
 }
 
-#content p {
-    line-height: 1.6;
+#main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-#content ul {
-    list-style-type: none;
-    padding: 0;
+#left-column, #right-column {
+    width: 48%;
+    background-color: #222;
+    padding: 15px;
 }
 
-#content ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-#content ul li a {
-    color: #ff0000;
-    text-decoration: none;
-}
-
-#content ul li a:hover {
-    text-decoration: underline;
+#left-column img {
+    max-width: 100%;
+    height: auto;
 }
 
 footer {
-    clear: both;
     background-color: #333;
     color: #fff;
     text-align: center;
