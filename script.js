@@ -6,9 +6,12 @@ const apiUrl = `${corsProxyUrl}https://pro-api.coinmarketcap.com/v1/cryptocurren
 async function fetchData() {
     try {
         const response = await fetch(apiUrl);
-        const data = await response.json();
-        console.log(data); // Log the data to the console (for testing)
-        // Handle the data as needed
+        const { data } = await response.json();
+
+        // Log the names of cryptocurrencies
+        data.forEach(crypto => {
+            console.log('Cryptocurrency Name:', crypto.name);
+        });
     } catch (error) {
         console.error('Error fetching data:', error);
     }
