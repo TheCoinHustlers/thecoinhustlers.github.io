@@ -15,10 +15,13 @@ async function fetchDataAndUpdatePage() {
         // Get the ul element to append list items
         const cryptoList = document.getElementById('crypto-names');
 
-        // Append list items for each cryptocurrency
-        data.forEach(crypto => {
+        // Clear existing content in the list
+        cryptoList.innerHTML = '';
+
+        // Append list items for each cryptocurrency with name and price
+        data.forEach((crypto, index) => {
             const listItem = document.createElement('li');
-            listItem.textContent = crypto.name;
+            listItem.textContent = `${index + 1}. ${crypto.name} - $${crypto.quote.USD.price.toFixed(2)}`;
             cryptoList.appendChild(listItem);
         });
     } catch (error) {
