@@ -43,8 +43,8 @@ h1 {
 
 #title-and-icons {
     display: flex;
-    align-items: center; /* Align the content vertically in the container */
-    justify-content: space-between; /* Space between the title and icons */
+    flex-direction: column; /* Stack the title and icons vertically */
+    align-items: flex-start; /* Align items to the start (left) */
 }
 
 #social-links {
