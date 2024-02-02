@@ -1,1 +1,11 @@
+title: The Coin Hustlers Blog
+description: A Blog about CyberSecurity and CryptoCurrency
+baseurl: "" # This can remain empty since you're hosting at the root
+url: "https://thecoinhustlers.github.io" # Your site's base URL
+twitter_username: TheCoinHustlers
+github_username:  TheCoinHustlers
 
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
